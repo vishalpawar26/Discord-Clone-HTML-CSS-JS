@@ -1,0 +1,470 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Noto Sans Display', sans-serif;
+}
+
+:root {
+  --discord-blue: #404EED;
+  --blue: #5865F2;
+  --white: #ffffff;
+  --light-gray: #F6F6F6;
+  --dark-not-black: #2c2f33;
+  --dark-gray: #23272A;
+  --button-shadow: #1416174e;
+  --black: #000000;
+}
+
+a {
+  text-decoration: none;
+}
+
+/************************************************ Header Content **************************************************/
+
+header {
+  background-color: var(--discord-blue);
+  min-width: 320px;
+  display: flex;
+  justify-content: center;
+}
+
+.header-content {
+  max-width: 1260px;
+  width: 100%;
+  height: 80px;
+  padding: 0rem 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  content: '';
+  position: absolute;
+  z-index: 10;
+}
+
+.logo {
+  width: 7.75rem;
+  display: flex;
+  align-items: center;
+}
+
+.nav-links {
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.625rem;
+  margin: 0rem 0.625rem;
+  color: var(--white);
+}
+
+.links:hover {
+  text-decoration: underline;
+}
+
+.header-button-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.login-button {
+  background-color: var(--white);
+  color: var(--black);
+  font-size: 0.875rem;
+  line-height: 1.4rem;
+  padding: 0.5rem 1rem;
+  border-radius: 2.5rem;
+  transition: box-shadow 250ms, color 250ms;
+}
+
+.menu-icon {
+  display: none;
+}
+
+.white-button:hover {
+  box-shadow: 0 0.25rem 1rem var(--button-shadow);
+  color: var(--discord-blue);
+}
+
+/************************************************* Hero Container *************************************************/
+
+.hero-container {
+  min-width: 320px;
+  background-color: var(--discord-blue);
+  overflow: hidden;
+  position: relative;
+}
+
+.hero-body {
+  max-width: 1260px;
+  padding: 7.5rem 2.5rem;
+  text-align: center;
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 10;
+  top: 80px;
+}
+
+.hero-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-text {
+  max-width: 780px;
+  min-width: 275px;
+  color: var(--white);
+}
+
+.hero-title {
+  font-family: 'Kanit', sans-serif;
+  letter-spacing: 2px;
+  font-size: 4rem;
+  line-height: 3.25rem;
+}
+
+.hero-subtitle {
+  margin-top: 2.5rem;
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+
+.hero-button-container {
+  margin-top: 2rem;
+  font-size: 1.2rem;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.download-button, .open-button  {
+  background-color: var(--white);
+  color: var(--black);
+  padding: 1rem 2rem;
+  display: flex;
+  border-radius: 2.5rem;
+  gap: 0.5rem;
+}
+
+.open-button {
+  background-color: var(--dark-gray);
+  color: var(--white);
+  transition: background-color 250ms, box-shadow 250ms;
+}
+
+.open-button:hover {
+  background-color: var(--dark-not-black);
+  box-shadow: 0 0.25rem 1rem var(--button-shadow);
+}
+
+.hero-image-container {
+  height: 626px;
+  min-width: 320px;
+  min-height: 160px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.foreground-image-left {
+  content: '';
+  position: absolute;
+  min-width: 320px;
+  margin-left: -1370px;
+  bottom: 0;
+}
+
+.foreground-image-right {
+  content: '';
+  position: absolute;
+  margin-right: -1355px;
+  bottom: 0;
+}
+
+/********************************************** Features Container ************************************************/
+
+.features-container {
+  min-width: 320px;
+}
+
+.feature-content-one, .feature-content-two, .feature-content-three {
+  max-width: 1260px;
+  padding: 7.5rem 2.5rem;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.feature-image img {
+  margin-top: 1.5rem;
+  width: 678px;
+}
+
+.feature-text {
+  width: 380px;
+}
+
+.feature-title h2 {
+  font-size: 2.75rem;
+  font-weight: 800;
+}
+
+.feature-subtitle {
+  margin-top: 1.25rem;
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+
+.feature-two-body {
+  background-color: var(--light-gray);
+}
+
+.feature-content-two {
+  flex-direction: row-reverse;
+}
+
+/************************************************ Device Container ************************************************/
+
+.device-container {
+  background-color: var(--light-gray);
+  min-width: 320px;
+}
+
+.device-content {
+  padding: 7.5rem 2.5rem 5rem;
+  margin: 0 auto;
+  max-width: 1260px;
+}
+
+.device-text {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.device-title {
+  font-family: 'Kanit', sans-serif;
+  letter-spacing: 2px;
+  font-weight: bolder;
+  text-align: center;
+  font-size: 3rem;
+  line-height: 3.25rem;
+}
+
+.device-subtitle {
+  text-align: center;
+  margin-top: 1.5rem;
+  font-size: 1.2rem;
+}
+
+.device-image {
+  margin: 1rem 0rem auto;
+  width:100%;
+}
+
+.download-container {
+  background-color: var(--light-gray);
+}
+
+.download-content {
+  padding: 0rem 2.5rem 7.5rem;
+  max-width: 1260px;
+  min-width: 320px;
+  margin: 0 auto;
+}
+
+.download-content-one, .download-content-two {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.sparkles {
+  display: flex;
+  justify-content: center;
+  background-image: url('images/decoration.svg');
+  background-size: 100% 100%;
+  height: 49px;
+  width: 100%;
+  margin: auto 0;
+  object-fit: cover;
+}
+
+.download-container-text {
+  content: '';
+  position: absolute;
+  font-size: 1.8rem;
+  top: 20px;
+}
+
+.blue-download-button {
+  margin-top: 2.5rem;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  color: var(--white);
+  border: none;
+  border-radius: 2.5rem;
+  background-color: var(--blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 250ms, box-shadow 250ms;
+}
+
+.download-icon {
+  filter: invert();
+  margin-right: 0.5rem;
+}
+
+.blue-download-button:hover {
+  background-color: #7b85f4;
+  box-shadow: 0 0.25rem 1rem var(--button-shadow);
+}
+
+/**************************************************** Footer ******************************************************/
+
+footer {
+  background-color: var(--dark-gray);
+  min-width: 320px;
+}
+
+.footer-content {
+  max-width: 1260px;
+  margin: 0 auto;
+  padding: 5rem 2.5rem 4rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-content-one {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.footer-content-one-left {
+  margin-bottom: 3.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+.language-container {
+  margin: 1.5rem 0rem;
+  display: flex;
+}
+
+.flag {
+  width: 1.5rem;
+  margin-right: 0.5rem;
+}
+
+.language {
+  color: var(--white);
+}
+
+.expand {
+  width: 1rem;
+  margin-left: 0.25rem;
+}
+
+.social {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.social-logo {
+  width: 1.4rem;
+}
+
+.spacer {
+  width: 12vw;
+}
+
+.footer-content-one-right {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.route-section {
+  margin-bottom: 2.5rem;
+  min-width: 126px;
+}
+
+li {
+  list-style-type: none;
+  margin-top: 0.5rem;
+}
+
+.footer-title {
+  font-size: 1rem;
+  color: var(--blue);
+  font-weight: normal;
+  margin-bottom: 1.25rem;
+}
+
+.footer-link {
+  color: var(--white);
+}
+
+.footer-content-two {
+  padding-top: 2rem;
+  border-top: 1.5px solid var(--blue);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-logo {
+  width: 7.75rem;
+}
+
+.signup-button {
+  background-color: var(--blue);
+  font-size: 0.85rem;
+  color: var(--white);
+  line-height: 1.5rem;
+  border-radius: 1.75rem;
+  padding: 0.5rem 1rem;
+  transition: background-color 250ms, box-shadow 250ms;
+}
+
+.signup-button:hover {
+  background-color: #7b85f4;
+  box-shadow: 0 0.25rem 1rem var(--button-shadow);
+}
+
+/************************************************** Animations ****************************************************/
+
+.hidden {
+  opacity: 0;
+  transform: translateY(5%);
+  transition: all 0.6s;
+  transition-delay: 0.2s;
+}  
+
+.slide-in-from-bottom {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion) {
+  .hidden {
+    transition: none;
+  }
+}

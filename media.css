@@ -1,0 +1,281 @@
+@media (max-width: 1260px) {
+  .feature-image img {
+    width: 54vw;
+  }
+
+  .feature-text {
+    width: 29vw;
+  }
+}
+
+@media (max-width: 1024px) {
+  .header-content {
+    position: static;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .hero-body {
+    padding: 5rem 2.5rem;
+    top: 0;
+  }
+
+  .hero-content {
+    max-width: 582px;
+    text-align: left;
+    justify-content: start;
+    align-items: start;
+  }
+
+  .hero-button-container {
+    flex-direction: column;
+  }
+
+  .download-button  {
+    width: fit-content;
+  }
+
+  .foreground-image-left {
+    display: none;
+  }
+
+  .foreground-image-right {
+    margin-right: -500px;
+  }
+
+  .feature-content-one, .feature-content-two, .feature-content-three {
+    padding: 5rem 2.5rem;
+  }
+
+  .feature-image img {
+    max-width: 45vw;
+  }
+
+  .feature-text {
+    width: 45vw;
+  }
+
+  .feature-subtitle {
+    font-size: 1.8vw;
+    line-height: 3.5vw;
+  }
+
+  .device-content {
+    padding: 5rem 2.5rem;
+  }
+
+  .device-subtitle {
+    line-height: 1.5rem;
+  }
+
+  .download-content {
+    padding-bottom: 5rem;
+  }
+
+  .footer-content-one-right {
+    grid-template-columns: repeat(2, 22vw);
+  }
+}
+
+@media (max-width: 1000px) {
+  .hero-text {
+    max-width: 60vw;
+  }
+
+  .hero-subtitle {
+    font-size: 1.9vw;
+    line-height: 3.25vw;
+  }
+
+  .device-title {
+    font-size: 4.9vw;
+  }
+
+  .device-subtitle {
+    font-size: 1.9vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-content {
+    padding: 0 1.5rem;
+  }
+
+  .hero-body {
+    padding: 3.5rem 1.5rem;
+    position: initial;
+  }
+
+  .hero-image-container {
+    height: 310px;
+  }
+
+  .hero-text {
+    width: calc(100vw - 3rem);
+  }
+
+  .hero-title {
+    font-size: 6vw;
+    line-height: 1.5rem;
+  }
+
+  .hero-subtitle {
+    margin-top: 1.5rem;
+    font-size: 0.95rem;
+    line-height: 1.6rem;
+  }
+
+  .hero-button-container {
+    margin-top: 1.5rem;
+    flex-direction: row;
+    width: calc(100vw - 3rem);
+  }
+
+  .background-image {
+    display: none;
+  }
+
+  .foreground-image-right {
+    display: none;
+  }
+
+  .foreground-image-left {
+    display: block;
+    height: 310px;
+    margin-left: -160px;
+  }
+
+  .feature-content-one, .feature-content-two, .feature-content-three {
+    flex-direction: column;
+    padding: 3.5rem 1.5rem;
+    gap: 1rem;
+  }
+
+  .feature-image img {
+    min-width: 92vw;
+  }
+
+  .feature-text {
+    min-width: 99%;
+  }
+
+  .feature-title h2 {
+    font-size: 3.75vw;
+    font-weight: 700;
+  }
+
+  .feature-subtitle {
+    font-size: 0.9rem;
+    line-height: 1.6rem;
+  }
+
+  .device-content {
+    padding: 3.5rem 1.5rem;
+  }
+
+  .device-title {
+    text-align: left;
+    line-height: 1.5rem;
+  }
+
+  .device-subtitle {
+    font-size: 0.9rem;
+    text-align: left;
+  }
+
+  .download-content {
+    padding: 0rem 1.5rem 3.5rem;
+  }
+
+  .blue-download-button {
+    width: 100%;
+  }
+
+  .footer-content {
+    padding: 5rem 1.5rem 4rem;
+  }
+
+  .footer-content-one {
+    flex-direction: column;
+  }
+
+  .footer-content-one-right {
+    grid-template-columns: repeat(2, calc(50vw - 2rem));
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 684px) {
+  .hero-button-container {
+    flex-direction: column;
+    width: auto;
+  }
+}
+
+@media (max-width: 614px) {
+  .hero-image-container {
+    height: 50vw;
+  }
+
+  .foreground-image-left {
+    width: 100vw;
+    height: 100%;
+    bottom: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .device-title {
+    font-size: 1.5rem;
+  }
+
+  .sparkles {
+    display: none;
+  }
+
+  .download-container-text {
+    position: static;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 1.8rem;
+  }
+
+  .feature-title h2 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 366px) {
+  .download-button, .open-button {
+    border-radius: 1.75rem;
+  }
+
+  .open-button {
+    text-align: center;
+  }
+
+  .blue-download-button {
+    text-align: left;
+    border-radius: 1.75rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .feature-image img {
+    min-width: 280px;
+  }
+
+  .footer-content-one-right {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+}
